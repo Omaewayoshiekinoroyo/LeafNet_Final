@@ -1208,3 +1208,85 @@ section {
 .button:hover {
   background-color: #E21818; /* Ubah warna latar belakang saat dihover sesuai keinginan Anda */
 }
+
+#Dark Mode Toggle
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+body.dark-mode .slider {
+    background-color: #888;
+}
+
+body.dark-mode .slider:before {
+    background-color: #111;
+}
+
+body.dark-mode input:checked + .slider {
+    background-color: #3dc04a;
+}
+
+body.dark-mode input:checked + .slider:before {
+    transform: translateX(34px);
+}
