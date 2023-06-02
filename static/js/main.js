@@ -307,31 +307,3 @@ $("#upload_form").submit(function(e) {
     }
   }, 1000);
 });
-
-// Dark Mode Toggle
-
-// Check if user preference for dark mode is set
-if (localStorage.getItem("darkMode") === "true") {
-    enableDarkMode();
-}
-
-// Toggle dark mode on switch change
-document.getElementById("dark-mode-toggle").addEventListener("change", function() {
-    if (this.checked) {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
-});
-
-// Function to enable dark mode
-function enableDarkMode() {
-    document.body.classList.add("dark-mode");
-    localStorage.setItem("darkMode", "true");
-}
-
-// Function to disable dark mode
-function disableDarkMode() {
-    document.body.classList.remove("dark-mode");
-    localStorage.setItem("darkMode", "false");
-}
