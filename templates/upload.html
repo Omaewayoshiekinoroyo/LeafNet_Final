@@ -59,44 +59,29 @@
 
   <main id="main">
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Upload dan Prediksi Gambar</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    /* CSS untuk tampilan form */
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Upload dan Prediksi Gambar</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <style>
+         /* CSS untuk tampilan form */
     #container {
       margin: 50px auto;
-      width: 600px;
-      display: flex;
-      align-items: center;
-    }
-    
-    #form_input {
       width: 400px;
       text-align: center;
-      margin-right: 20px;
     }
-    
-    #hasil_prediksi {
-      width: 200px;
-      text-align: center;
-    }
-    
     #preview {
       margin: 20px auto;
       width: 200px;
       height: 200px;
       border: 1px solid #ccc;
     }
-    
     #prediksi_submit {
       margin-top: 30px;
       background-color: #ff3b30;
       border-color: #ff3b30;
     }
-    
     .custom-file-input::-webkit-file-upload-button {
       background-color: #ff3b30;
       color: white;
@@ -104,7 +89,6 @@
       border-radius: 4px;
       border-color: #ff3b30;
     }
-    
     .custom-file-input::-moz-file-upload-button {
       background-color: #ff3b30;
       color: white;
@@ -112,7 +96,6 @@
       border-radius: 4px;
       border-color: #ff3b30;
     }
-    
     .custom-file-input::before {
       background-color: #ff3b30;
       color: white;
@@ -120,35 +103,32 @@
       border-radius: 4px;
       border-color: #ff3b30;
     }
+        #prediksi_submit {
+          margin-top: 20px;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="container">
+        <h2>Silahkan Input Gambar</h2>
+        <form id="upload_form" enctype="multipart/form-data">
+          <div class="form-group">
+            <input type="file" id="input_gambar" accept=".jpg" onchange="previewImage(event)">
+          </div>
+          <div class="form-group">
+            <div id="preview"></div>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="prediksi_submit" class="btn btn-primary">Prediksi</button>
+          </div>
+        </form>
+        <div id="hasil_prediksi"></div>
+      </div>
     
-    #prediksi_submit {
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div id="container">
-    <div id="form_input">
-      <h2>Silahkan Input Gambar</h2>
-      <form id="upload_form" enctype="multipart/form-data">
-        <div class="form-group">
-          <input type="file" id="input_gambar" accept=".jpg" onchange="previewImage(event)">
-        </div>
-        <div class="form-group">
-          <div id="preview"></div>
-        </div>
-        <div class="form-group">
-          <button type="submit" id="prediksi_submit" class="btn btn-primary">Prediksi</button>
-        </div>
-      </form>
-    </div>
-    <div id="hasil_prediksi"></div>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+    </html>
         
 
   </main><!-- End #main -->
