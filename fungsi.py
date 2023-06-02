@@ -5,7 +5,7 @@ from tensorflow.keras.applications import mobilenet
 from tensorflow.keras.layers import GlobalAveragePooling2D
 
 def make_model():
-  model = Sequential()
+    model = Sequential()
     model.add(Conv2D(16, (3, 3), input_shape=(32, 32, 3), padding='same'))
     model.add(LeakyReLU(0.1))
     model.add(Conv2D(32, (3, 3), padding='same'))
@@ -36,5 +36,4 @@ model.add(Dense(1024, activation="relu"))
 model.add(Dense(512, activation="relu"))
 model.add(Dense(4, activation="softmax", name="classification"))
 
-
-    return model
+return model
