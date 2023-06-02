@@ -61,13 +61,13 @@ def apiDeteksi():
 
         # Mengubah label prediksi menjadi teks yang lebih deskriptif
         if hasil_prediksi == 'class_0':
-            hasil_prediksi = 'Apple Black Rot'
-        elif hasil_prediksi == 'class_1':
-            hasil_prediksi = 'Apple Cedar Apple Rust'
-        elif hasil_prediksi == 'class_2':
-            hasil_prediksi = 'Apple Healthy'
-        else:
             hasil_prediksi = 'Apple Scab'
+        elif hasil_prediksi == 'class_1':
+            hasil_prediksi = 'Apple Black Rot'
+        elif hasil_prediksi == 'class_2':
+            hasil_prediksi = 'Apple Cedar Apple Rust'
+        else:
+            hasil_prediksi = 'Apple Healthy'
 
         # Menghapus file gambar temporary
         os.remove(file_path)
