@@ -4,6 +4,8 @@ import numpy as np
 from flask import Flask, render_template, request, jsonify
 from flask_ngrok import run_with_ngrok
 import cv2
+import os
+from fungsi import make_model
 
 # =[Variabel Global]=============================
 app = Flask(__name__, static_url_path='/static')
@@ -30,7 +32,8 @@ def apiDeteksi():
     # Load model yang telah ditraining
     global model
     if model is None:
-        model = tf.keras.models.load_model('model_leafnet_tf.h5')
+        model = make_model()
+        model.load_weights('model_leafnet_tf.h5')
     
     if request.method == 'POST':
         # Menerima file gambar yang dikirim dari frontend
