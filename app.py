@@ -6,6 +6,9 @@ from flask_ngrok import run_with_ngrok
 import cv2
 import os
 from fungsi import make_model
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import GlobalAveragePooling2D, Flatten, Dense
+from tensorflow.keras.applications import mobilenet
 
 # =[Variabel Global]=============================
 app = Flask(__name__, static_url_path='/static')
