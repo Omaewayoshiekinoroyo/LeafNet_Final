@@ -4,11 +4,6 @@ import numpy as np
 from flask import Flask, render_template, request, jsonify
 from flask_ngrok import run_with_ngrok
 import cv2
-import os
-import fungsi.py
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import GlobalAveragePooling2D, Flatten, Dense
-from tensorflow.keras.applications import mobilenet
 
 # =[Variabel Global]=============================
 app = Flask(__name__, static_url_path='/static')
@@ -35,8 +30,7 @@ def apiDeteksi():
     # Load model yang telah ditraining
     global model
     if model is None:
-        model = make_model()
-        model.load_weights('model_leafnet_tf.h5')
+        model = tf.keras.models.load_model('model_leafnet_tf.h5')
     
     if request.method == 'POST':
         # Menerima file gambar yang dikirim dari frontend
