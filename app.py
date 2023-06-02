@@ -39,7 +39,7 @@ def apiDeteksi():
         file = request.files['file']
 
         # Simpan file gambar ke direktori temporary
-        file_path = 'static/temp/temp.jpg'
+        file_path = 'static/temp/temp.txt'
         file.save(file_path)
 
         # Membaca dan memproses gambar dengan OpenCV
