@@ -63,9 +63,61 @@
     <html>
     <head>
       <title>Upload dan Prediksi Gambar</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
       <style>
          /* CSS untuk tampilan form */
+         body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .disease-card {
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .disease-card .card-header {
+      background-color: #f8f9fa;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .disease-card .card-body p {
+      margin-bottom: 10px;
+    }
+
+    .disease-card.disease-detection .card-header {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+
+    @media (max-width: 767px) {
+      .disease-card {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Additional CSS for positioning the cards */
+    .col-md-6 {
+      padding: 10px;
+    }
+
+    .col-md-6:first-child {
+      order: 1;
+    }
+
+    .col-md-6:last-child {
+      order: 2;
+    }
     #container {
       margin: 50px auto;
       width: 400px;
@@ -105,30 +157,82 @@
     }
         #prediksi_submit {
           margin-top: 20px;
-        }
-      </style>
-    </head>
-    <body>
-      <div id="container">
-        <h2>Silahkan Input Gambar</h2>
-        <form id="upload_form" enctype="multipart/form-data">
-          <div class="form-group">
-            <input type="file" id="input_gambar" accept=".jpg" onchange="previewImage(event)">
-          </div>
-          <div class="form-group">
-            <div id="preview"></div>
-          </div>
-          <div class="form-group">
-            <button type="submit" id="prediksi_submit" class="btn btn-primary">Prediksi</button>
-          </div>
-        </form>
-        <div id="hasil_prediksi"></div>
+    }
+  </style>
+  <title>Disease Information</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="container">
+          <h2>Silahkan Input Gambar</h2>
+          <form id="upload_form" enctype="multipart/form-data">
+            <div class="form-group">
+              <input type="file" id="input_gambar" accept=".jpg" onchange="previewImage(event)">
+            </div>
+            <div class="form-group">
+              <div id="preview"></div>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="prediksi_submit" class="btn btn-primary">Prediksi</button>
+            </div>
+          </form>
+          <div id="hasil_prediksi"></div>
+        </div>
       </div>
-    
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="script.js"></script> 
-    </body>
-    </html>
+      <div class="col-md-6">
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              Apple Scab (Embun Apel)
+            </div>
+            <div class="card-body">
+              <p>Apple Scab adalah penyakit jamur yang umum pada buah apel. Gejalanya meliputi adanya bintik-bintik berwarna coklat kehitaman pada daun, buah, dan ranting apel. Bintik-bintik tersebut dapat membesar dan menggabung menjadi kerak-kerak kasar yang dapat mengganggu pertumbuhan dan perkembangan buah. Penyakit ini dapat menyebabkan penurunan kualitas buah dan rendahnya hasil panen jika tidak dikelola dengan baik.</p>
+            </div>
+          </div>
+        </div>
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              Black Rot (Busuk Hitam)
+            </div>
+            <div class="card-body">
+              <p>Black Rot juga merupakan penyakit jamur yang mempengaruhi buah apel. Gejalanya meliputi bintik-bintik berwarna coklat kehitaman yang muncul pada buah dan daun. Bintik-bintik tersebut kemudian membesar dan menghasilkan area busuk berwarna hitam yang membusuk pada buah. Buah yang terinfeksi Black Rot umumnya menjadi lunak, berkerut, dan tidak layak untuk dikonsumsi. Penyakit ini dapat menyebar melalui spora jamur yang terbawa oleh air hujan atau angin.</p>
+            </div>
+          </div>
+        </div>
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              Cedar Apple Rust (Karat Apel Cedar)
+            </div>
+            <div class="card-body">
+              <p>Cedar Apple Rust adalah penyakit yang melibatkan dua inang, yaitu tanaman apel dan pohon cedar. Penyakit ini disebabkan oleh jamur yang menghasilkan bintik-bintik berwarna oranye-bisul pada daun dan buah apel. Pada pohon cedar, jamur tersebut menghasilkan gumpalan-gumpalan berwarna coklat kehitaman. Penyakit ini dapat mengurangi produksi buah apel dan menyebabkan kerugian ekonomi pada pertanian apel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              Healthy (Sehat)
+            </div>
+            <div class="card-body">
+              <p>Healthy (sehat) mengacu pada kondisi daun buah apel yang tidak terinfeksi oleh penyakit atau gangguan lainnya. Daun sehat umumnya memiliki warna hijau cerah, bebas dari bintik-bintik, kerak, atau tanda-tanda kerusakan lainnya. Daun yang sehat sangat penting untuk menjaga kesehatan dan produktivitas pohon apel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
         
 
   </main><!-- End #main -->
