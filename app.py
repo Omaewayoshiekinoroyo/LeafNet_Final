@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_ngrok import run_with_ngrok
 import cv2
 import os
-from fungsi import make_model
+from model import make_model
 
 # =[Variabel Global]=============================
 app = Flask(__name__, static_url_path='/static')
@@ -39,7 +39,7 @@ def apiDeteksi():
         file = request.files['file']
 
         # Simpan file gambar ke direktori temporary
-        file_path = 'static/temp/temp.txt'
+        file_path = 'static/temp/temp.jpg'  # Menggunakan ekstensi .jpg
         file.save(file_path)
 
         # Membaca dan memproses gambar dengan OpenCV
