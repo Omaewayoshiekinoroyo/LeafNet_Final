@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_ngrok import run_with_ngrok
 import cv2
 import os
-from model import make_model
+from fungsi import make_model
 
 # =[Variabel Global]=============================
 app = Flask(__name__, static_url_path='/static')
