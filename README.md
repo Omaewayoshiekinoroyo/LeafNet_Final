@@ -18,18 +18,20 @@ Untuk menjalankan aplikasi ini di lingkungan lokal, ikuti langkah-langkah beriku
    ```shell
    git clone https://github.com/Omaewayoshiekinoroyo/LeafNet_Final.git
 
+
 2. Buka folder proyek:
-
    ```shell
-cd LeafNet_Final
+   cd LeafNet_Final
 
-   ```shell
 
 3. Install dependensi:
 
-npm install
-
    ```shell
+   npm install
+
+
+
 4. Jalankan aplikasi:
 
-npm start
+   ```shell
+   npm start
