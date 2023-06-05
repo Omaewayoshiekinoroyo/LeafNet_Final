@@ -20,15 +20,16 @@ Untuk menjalankan aplikasi ini di lingkungan lokal, ikuti langkah-langkah beriku
 
 2. Buka folder proyek:
 
+   ```shell
 cd LeafNet_Final
 
-
+   ```shell
 
 3. Install dependensi:
 
 npm install
 
-
+   ```shell
 4. Jalankan aplikasi:
 
 npm start
