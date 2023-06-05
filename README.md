@@ -7,7 +7,7 @@
 
 Di bawah ini adalah tampilan animasi dari demo aplikasi LeafNet:
 
-![Demo Aplikasi LeafNet](https://github.com/username/LeafNet_Final/blob/master/Demo/LeafNet.gif)
+![Demo Aplikasi LeafNet](https://github.com/Omaewayoshiekinoroyo/LeafNet_Final/blob/master/Demo/LeafNet.gif)
 
 ## Instalasi
 
@@ -16,4 +16,19 @@ Untuk menjalankan aplikasi ini di lingkungan lokal, ikuti langkah-langkah beriku
 1. Clone repositori ini:
 
    ```shell
-   git clone https://github.com/username/LeafNet_Final.git
+   git clone https://github.com/Omaewayoshiekinoroyo/LeafNet_Final.git
+
+2. Buka folder proyek:
+
+cd LeafNet_Final
+
+
+
+3. Install dependensi:
+
+npm install
+
+
+4. Jalankan aplikasi:
+
+npm start
