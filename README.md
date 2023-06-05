@@ -3,6 +3,17 @@
 # LeafNet
 
 
-# Demo Aplikasi 
+## Demo Aplikasi
 
-![giphy (30)](https://user-images.githubusercontent.com/85488433/Demo Aplikasi LeafNet.gif)
+Di bawah ini adalah tampilan animasi dari demo aplikasi LeafNet:
+
+![Demo Aplikasi LeafNet](https://github.com/username/LeafNet_Final/blob/master/Demo/LeafNet.gif)
+
+## Instalasi
+
+Untuk menjalankan aplikasi ini di lingkungan lokal, ikuti langkah-langkah berikut:
+
+1. Clone repositori ini:
+
+   ```shell
+   git clone https://github.com/username/LeafNet_Final.git
