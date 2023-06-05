@@ -4,25 +4,31 @@
 
 LeafNet adalah aplikasi yang bertujuan untuk mendeteksi penyakit pada tanaman apel melalui analisis daun apel menggunakan teknologi machine learning. Aplikasi ini dikembangkan oleh tim Ampera: 
 
-   ```shell
-Okamisar - Ketua Proyek dan Machine Learning Engineer
+# Tim Proyek LeafNet
 
-Institusi: Universitas Muhammadiyah Riau
+Tim Proyek LeafNet adalah tim yang terdiri dari beberapa anggota dengan peran masing-masing dalam pengembangan proyek ini.
 
-   ```shell
-D. Rakyan Elangga Rizki Wardhana - Pengembang Front End & Back End
+## Anggota Tim
 
-Institusi: Universitas Jambi
+### Okamisar
 
-   ```shell
-Viorryn Aisha Uzhelia - Ahli Data Science
+- Peran: Ketua Proyek dan Machine Learning Engineer
+- Institusi: Universitas Muhammadiyah Riau
 
-Institusi: Politeknik Negeri Padang
+### D. Rakyan Elangga Rizki Wardhana
 
-   ```shell
-Maulidya Rachmawati - Data Acquisitor
+- Peran: Pengembang Front End & Back End
+- Institusi: Universitas Jambi
 
-Institusi: Politeknik Negeri Padang
+### Viorryn Aisha Uzhelia
+
+- Peran: Ahli Data Science
+- Institusi: Politeknik Negeri Padang
+
+### Maulidya Rachmawati
+
+- Peran: Data Acquisitor
+- Institusi: Politeknik Negeri Padang
 
 ## Demo Aplikasi
 
