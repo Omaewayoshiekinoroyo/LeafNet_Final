@@ -7,7 +7,7 @@
 
 Di bawah ini adalah tampilan animasi dari demo aplikasi LeafNet:
 
-![Demo Aplikasi LeafNet](https://github.com/Omaewayoshiekinoroyo/LeafNet_Final/blob/master/Demo/LeafNet.gif)
+![Demo Aplikasi LeafNet](https://github.com/Omaewayoshiekinoroyo/LeafNet_Final/raw/main/Demo%20Aplikasi%20LeafNet.gif)
 
 ## Instalasi
 
