@@ -15,28 +15,36 @@ Tim Proyek LeafNet adalah tim yang terdiri dari beberapa anggota dengan peran ma
 - Peran: Ketua Proyek dan Machine Learning Engineer
 - Institusi: Universitas Muhammadiyah Riau
 
-![Okamisar](./static/img/team/Okamisar.jpg)
+<div style="border: 1px solid #ccc; padding: 10px; display: inline-block;">
+  <img src="./static/img/team/Okamisar.jpg" alt="Okamisar" width="200"/>
+</div>
 
 ### D. Rakyan Elangga Rizki Wardhana
 
 - Peran: Pengembang Front End & Back End
 - Institusi: Universitas Jambi
 
-![Okamisar](./static/img/team/Angga.jpg)
+<div style="border: 1px solid #ccc; padding: 10px; display: inline-block;">
+  <img src="./static/img/team/Angga.jpg" alt="D. Rakyan Elangga Rizki Wardhana" width="200"/>
+</div>
 
 ### Viorryn Aisha Uzhelia
 
 - Peran: Ahli Data Science
 - Institusi: Politeknik Negeri Padang
 
-![Viorryn](./static/img/team/Viorryn.jpg)
+<div style="border: 1px solid #ccc; padding: 10px; display: inline-block;">
+  <img src="./static/img/team/Viorryn.jpg" alt="Viorryn Aisha Uzhelia" width="200"/>
+</div>
 
 ### Maulidya Rachmawati
 
 - Peran: Data Acquisitor
 - Institusi: Politeknik Negeri Padang
 
-![Maulidya](./static/img/team/Maulidya.jpg)
+<div style="border: 1px solid #ccc; padding: 10px; display: inline-block;">
+  <img src="./static/img/team/Maulidya.jpg" alt="Maulidya Rachmawati" width="200"/>
+</div>
 
 ## Demo Aplikasi
 
